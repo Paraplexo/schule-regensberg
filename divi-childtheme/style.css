@@ -8,6 +8,7 @@
  Version:        1.0.0
 */
  
+/* Import deactivated and now done in functions.php because of performance constraints */
 /* @import url("../Divi/style.css"); */
  
 /* =Theme customization starts here
