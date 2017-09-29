@@ -12,3 +12,47 @@
  
 /* =Theme customization starts here
 ------------------------------------------------------- */
+
+/* Custom CSS Setting ver 1.2 */
+
+/* Custom Font für Body. Font muss im Header geladen werden */
+
+p h1 h2 h3 h4 {
+font-family: “Poppins”, sans-serif;
+}
+
+/* Brings the menu items closer to the bottom */
+#top-menu-nav {
+	height: 40px;
+}
+#top-menu .menu-item-has-children>a:first-child {
+    padding-bottom: 1em;
+}
+
+/* Dropdown menu item darker */
+#top-menu li li a:hover {
+	background-color:lightgrey;
+}
+
+/* Set max width header slider section 
+div.et_pb_section.et_pb_fullwidth_section.et_pb_section_0.et_section_regular {
+	max-width: 1600px;
+}
+*/
+
+
+/* Setting the breakpoint of the mobile menu */
+@media only screen and ( max-width: 1150px ) {
+#top-menu-nav, #top-menu {display: none;}
+#et_top_search {display: none;}
+#et_mobile_nav_menu {display: block;}
+}
+
+/* Change display of mob-menu button */
+#et_mobile_nav_menu span:before {
+	font-size: 300%;
+}
+
+#et_mobile_nav_menu span.mobile_menu_bar.mobile_menu_bar_toggle {
+	padding-bottom: 5px; 
+} 
