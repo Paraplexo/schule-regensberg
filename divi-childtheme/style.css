@@ -40,7 +40,7 @@ div.et_pb_section.et_pb_fullwidth_section.et_pb_section_0.et_section_regular {
 */
 
 
-/* Setting the breakpoint of the mobile menu */
+/* Setting custom breakpoint of the mobile menu */
 @media only screen and ( max-width: 1150px ) {
 #top-menu-nav, #top-menu {display: none;}
 #et_top_search {display: none;}
@@ -55,3 +55,31 @@ div.et_pb_section.et_pb_fullwidth_section.et_pb_section_0.et_section_regular {
 #et_mobile_nav_menu span.mobile_menu_bar.mobile_menu_bar_toggle {
 	padding-bottom: 5px; 
 } 
+
+/* custom header text styling */
+.mv_header_text h1 {
+	display: inline-block;
+	position: absolute;
+	top:15px;
+	right: 0;
+	color: #525252;
+}
+@media screen and (max-width: 800px) {
+	.mv_header_text h1 {
+		display: none 
+	}
+}
+@media screen and (max-width: 980px) {
+	.mv_header_text h1 {
+		right: 55px;
+		top: 28px;
+	}
+}
+@media screen and (max-width: 1050px) {
+	.mv_header_text h1 {
+		font-size: 25px;
+	}
+}
+/* end custom header text styling */
+
+

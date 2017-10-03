@@ -210,7 +210,7 @@
 				$logo = ( $user_logo = et_get_option( 'divi_logo' ) ) && '' != $user_logo
 					? $user_logo
 					: $template_directory_uri . '/images/logo.png';
-			?>
+			?>	
 				<div class="logo_container">
 					<span class="logo_helper"></span>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
@@ -265,6 +265,9 @@
 
 					<?php do_action( 'et_header_top' ); ?>
 				</div> <!-- #et-top-navigation -->
+				<div class="class mv_header_text"> <!-- custom div for inserting text on header --> 
+					<h1> Primar- und Tagesschule Regensberg </h1>
+				</div>
 			</div> <!-- .container -->
 			<div class="et_search_outer">
 				<div class="container et_search_form_container">
