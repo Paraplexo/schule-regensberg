@@ -31,6 +31,7 @@
 	</script>
 
 	<?php wp_head(); ?>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> <!-- Adds custom google font -->
 </head>
 <body <?php body_class(); ?>>
 <?php
