@@ -14,10 +14,11 @@
 /* =Theme customization starts here
 ------------------------------------------------------- */
 
+
 /* Custom Font für Body. Font muss im Header geladen werden */
 
-p h1 h2 h3 h4 {
-font-family: “Poppins”, sans-serif;
+h1, h2, h3 {
+font-family: 'Poppins', sans-serif;
 }
 
 /* Brings the menu items closer to the bottom */
