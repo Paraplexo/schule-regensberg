@@ -20,6 +20,11 @@ body {
 font-family: 'Poppins', sans-serif;
 }
 
+/* Set max width of entire site. Default is 80% */
+.et_pb_row , .container.clearfix.et_menu_container {
+	width: 95%;
+}
+
 /* Brings the menu items closer to the bottom */
 #top-menu-nav {
 	height: 40px;
