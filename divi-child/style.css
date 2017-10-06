@@ -63,6 +63,14 @@ div.et_pb_section.et_pb_fullwidth_section.et_pb_section_0.et_section_regular {
 	top:15px;
 	right: 0;
 	color: #525252;
+	opacity: 1;
+	transition: opacity .5s ease-in-out;
+	-webkit-webkit-transition: opacity .5s ease-in-out;
+	-moz-webkit-transition: opacity .5s ease-in-out;
+	-ms-webkit-transition: opacity .5s ease-in-out;
+	-o-webkit-transition: opacity .5s ease-in-out;
+	webkit-transition: opacity .5s ease-in-out;
+
 }
 @media screen and (max-width: 800px) {
 	.mv_header_text h1 {
@@ -81,14 +89,15 @@ div.et_pb_section.et_pb_fullwidth_section.et_pb_section_0.et_section_regular {
 	}
 }
 .et-fixed-header .mv_header_text h1 {
-	background-color: pink;
+}
+.et-fixed-header .mv_header_text h1 {
 	opacity: 0;
-	transition: opacity .25s ease-in-out;
-	-webkit-webkit-transition: opacity .25s ease-in-out;
-	-moz-webkit-transition: opacity .25s ease-in-out;
-	-ms-webkit-transition: opacity .25s ease-in-out;
-	-o-webkit-transition: opacity .25s ease-in-out;
-	webkit-transition: opacity .25s ease-in-out;
+	transition: opacity .5s ease-in-out;
+	-webkit-webkit-transition: opacity .5s ease-in-out;
+	-moz-webkit-transition: opacity .5s ease-in-out;
+	-ms-webkit-transition: opacity .5s ease-in-out;
+	-o-webkit-transition: opacity .5s ease-in-out;
+	webkit-transition: opacity .5s ease-in-out;
 }
 /* End custom header text styling */
 
