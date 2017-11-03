@@ -38,30 +38,23 @@ font-family: 'Poppins', sans-serif;
 	background-color:lightgrey;
 }
 
-/* Set max width header slider section 
-div.et_pb_section.et_pb_fullwidth_section.et_pb_section_0.et_section_regular {
-	max-width: 1600px;
-}
-*/
-
-
 /* Setting custom breakpoint of the mobile menu to avoid normal menu do a line break */
 @media only screen and ( max-width: 1150px ) {
-#top-menu-nav, #top-menu {display: none;}
-#et_top_search {display: none;}
-#et_mobile_nav_menu {display: block;}
+	#top-menu-nav, #top-menu {display: none;}
+	#et_top_search {display: none;}
+	#et_mobile_nav_menu {display: block;}
 }
 
-/* Change display of mob-menu button */
+/* Change display of mobile-menu button */
 #et_mobile_nav_menu span:before {
 	font-size: 300%;
 }
-
 #et_mobile_nav_menu span.mobile_menu_bar.mobile_menu_bar_toggle {
 	padding-bottom: 5px; 
-} 
+}
+/* END Change display of mobile-menu button */
 
-/* custom header text styling */
+/* Custom header text styling */
 .mv_header_text h1 {
 	display: inline-block;
 	position: absolute;
@@ -103,6 +96,38 @@ div.et_pb_section.et_pb_fullwidth_section.et_pb_section_0.et_section_regular {
 	webkit-transition: opacity .5s ease-in-out;
 	z-index: -1;
 }
+/* END custom header text styling */
 
-/* End custom header text styling */
-
+/* Mobile menu collapse/expand function. A custom script "mobilemenu-enhancement.js" is neended */
+#main-header .et_mobile_menu .menu-item-has-children > a { 
+	background-color: transparent; position: relative; 
+}
+#main-header .et_mobile_menu .menu-item-has-children > a:after {
+	font-family: 'ETmodules'; 
+	text-align: center; 
+	speak: none; 
+	font-weight: normal; 
+	font-variant: normal; 
+	text-transform: none; 
+	-webkit-font-smoothing: antialiased; 
+	position: absolute; 
+}
+#main-header .et_mobile_menu .menu-item-has-children > a:after { 
+	font-size: 18px; 
+	content: '\35'; 
+	top: 13px; 
+	right: 10px; 
+}
+#main-header .et_mobile_menu .menu-item-has-children.visible > a:after { 
+	content: '\33'; 
+}
+#main-header .et_mobile_menu ul.sub-menu {
+	display: none !important; 
+	visibility: hidden !important;  
+	transition: all 1.5s ease-in-out;
+}
+#main-header .et_mobile_menu .visible > ul.sub-menu { 
+	display: block !important; 
+	visibility: visible !important; 
+}
+/* End mobile menu collapse/expand function */
