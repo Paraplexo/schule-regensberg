@@ -131,3 +131,37 @@ font-family: 'Poppins', sans-serif;
 	visibility: visible !important; 
 }
 /* End mobile menu collapse/expand function */
+
+/* Styling for CC Plugin show sub pages grid */
+.simple .ccchildpage {
+	color:inherit;
+	background: inherit;
+	border-radius: 5px;
+	border-style: solid;
+	border-color: lightgray;
+	border-width: 1px;
+}
+
+.simple .ccpages_more a{
+	color:transparent;
+}
+
+
+.simple .ccpages_more a:after{
+	content: "Mehr...";
+	background-color: #e09900;
+	border: none;
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 10px 2px;
+	cursor: pointer;
+	border-radius: 3px;	
+}
+/* END Styling for CC Plugin show sub pages grid */
+
+
+
+ 
