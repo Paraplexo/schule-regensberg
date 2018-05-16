@@ -265,9 +265,10 @@
 
 					<?php do_action( 'et_header_top' ); ?>
 				</div> <!-- #et-top-navigation -->
-				<div class="class mv_header_text"> <!-- custom div for inserting text on header --> 
+				<!-- custom div for inserting text on header --> 
+				<!-- <div class="class mv_header_text"> 
 					<h1> Primar- und Tagesschule Regensberg </h1>
-				</div>
+				</div> -->
 			</div> <!-- .container -->
 			<div class="et_search_outer">
 				<div class="container et_search_form_container">

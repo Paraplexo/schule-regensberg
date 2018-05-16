@@ -54,49 +54,6 @@ font-family: 'Poppins', sans-serif;
 }
 /* END Change display of mobile-menu button */
 
-/* Custom header text styling */
-.mv_header_text h1 {
-	display: inline-block;
-	position: absolute;
-	top:15px;
-	right: 0;
-	color: #525252;
-	opacity: 1;
-	transition: opacity .5s ease-in-out;
-	-webkit-webkit-transition: opacity .5s ease-in-out;
-	-moz-webkit-transition: opacity .5s ease-in-out;
-	-ms-webkit-transition: opacity .5s ease-in-out;
-	-o-webkit-transition: opacity .5s ease-in-out;
-	webkit-transition: opacity .5s ease-in-out;
-
-}
-@media screen and (max-width: 842px) {
-	.mv_header_text h1 {
-		display: none 
-	}
-}
-@media screen and (max-width: 980px) {
-	.mv_header_text h1 {
-		right: 55px;
-		top: 28px;
-	}
-}
-@media screen and (max-width: 1090px) {
-	.mv_header_text h1 {
-		font-size: 25px;
-	}
-}
-.et-fixed-header .mv_header_text h1 {
-	opacity: 0;
-	transition: opacity .5s ease-in-out;
-	-webkit-webkit-transition: opacity .5s ease-in-out;
-	-moz-webkit-transition: opacity .5s ease-in-out;
-	-ms-webkit-transition: opacity .5s ease-in-out;
-	-o-webkit-transition: opacity .5s ease-in-out;
-	webkit-transition: opacity .5s ease-in-out;
-	z-index: -1;
-}
-/* END custom header text styling */
 
 /* Mobile menu collapse/expand function. A custom script "mobilemenu-enhancement.js" is neended */
 #main-header .et_mobile_menu .menu-item-has-children > a { 
@@ -130,38 +87,4 @@ font-family: 'Poppins', sans-serif;
 	display: block !important; 
 	visibility: visible !important; 
 }
-/* End mobile menu collapse/expand function */
-
-/* Styling for CC Plugin show sub pages grid */
-.simple .ccchildpage {
-	color:inherit;
-	background: inherit;
-	border-radius: 5px;
-	border-style: solid;
-	border-color: lightgray;
-	border-width: 1px;
-}
-
-.simple .ccpages_more a{
-	color:transparent;
-}
-
-
-.simple .ccpages_more a:after{
-	content: "Mehr...";
-	background-color: #e09900;
-	border: none;
-	color: white;
-	padding: 5px 10px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	margin: 10px 2px;
-	cursor: pointer;
-	border-radius: 3px;	
-}
-/* END Styling for CC Plugin show sub pages grid */
-
-
-
- 
+/* End mobile menu collapse/expand function */ 
