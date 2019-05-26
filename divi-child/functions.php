@@ -20,7 +20,7 @@ function collapse_mobile_menu() {
 add_action('wp_enqueue_scripts', 'collapse_mobile_menu');
 // END mobile menu //
 
-// Jetpack: Display tickbox in post meta to choose if the particular post should be sent to email subscribers
-add_filter( 'jetpack_allow_per_post_subscriptions', '__return_true' );
+// Jetpack: display tickbox in post meta to choose if the particular post should be sent to email subscribers
+function add_filter( 'jetpack_allow_per_post_subscriptions', '__return_true' );
 
 ?>
