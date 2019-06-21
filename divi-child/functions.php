@@ -1,5 +1,5 @@
 <?php
-// Load child theme instead of @import in style.css because it's performing better //
+// Load child theme instead of @import in style.css because of better performance //
 function my_theme_enqueue_styles() {
     $parent_style = 'parent-style';
     wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
@@ -20,4 +20,31 @@ function collapse_mobile_menu() {
 add_action('wp_enqueue_scripts', 'collapse_mobile_menu');
 // END mobile menu //
 
+// Enqueue the script for WPForms customization //
+function wpf_dev_datepicker_locale() {
+	
+	wp_enqueue_script( 
+		'wpforms-datepicker-locale', 
+	//	'https://npmcdn.com/flatpickr@4.6.1/dist/l10n/de.js', //
+		get_stylesheet_directory_uri() . '/js/de.js',
+		array( 'wpforms-flatpickr' ), 
+		null, 
+		true
+	);
+}
+add_action( 'wp_enqueue_scripts', 'wpf_dev_datepicker_locale' );
+
+function wpf_dev_datepicker_apply_locale() {
+	?>
+	<script type="text/javascript">
+    jQuery(document).ready(function(){
+		flatpickr.localize(Flatpickr.l10ns.de);
+		flatpickr('.wpforms-datepicker');
+     });
+	</script>
+	<?php
+}
+add_action( 'wpforms_wp_footer_end', 'wpf_dev_datepicker_apply_locale', 30 );
+
+// END WPForms //
 ?>
