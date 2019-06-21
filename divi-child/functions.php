@@ -20,12 +20,15 @@ function collapse_mobile_menu() {
 add_action('wp_enqueue_scripts', 'collapse_mobile_menu');
 // END mobile menu //
 
-// Enqueue the script for WPForms customization //
+// WPForms customization //
+
+/** Change the date picker to a local format (e.g. DE ) **/
 function wpf_dev_datepicker_locale() {
-	
 	wp_enqueue_script( 
 		'wpforms-datepicker-locale', 
+	//	Use the below line if script should be lodaded via CDN network //
 	//	'https://npmcdn.com/flatpickr@4.6.1/dist/l10n/de.js', //
+	//	Use the below line of loading script locally. The script mus be placed in the child themes /js dir //
 		get_stylesheet_directory_uri() . '/js/de.js',
 		array( 'wpforms-flatpickr' ), 
 		null, 
@@ -46,5 +49,23 @@ function wpf_dev_datepicker_apply_locale() {
 }
 add_action( 'wpforms_wp_footer_end', 'wpf_dev_datepicker_apply_locale', 30 );
 
-// END WPForms //
+/**
+ * Add additional formats for the Date field date picker.
+ *
+ * @param array $formats
+ * @return array
+ */
+function wpf_dev_date_field_formats( $formats ) {
+
+	// Item key is JS date character - see https://flatpickr.js.org/formatting/
+	// Item value is in PHP format - see http://php.net/manual/en/function.date.php
+
+	// Adds new format Tuesday, 14. May 2019
+	$formats['l, j F Y'] = 'l, j F Y';
+
+	return $formats;
+}
+add_filter( 'wpforms_datetime_date_formats', 'wpf_dev_date_field_formats' );
+
+// END WPForms customization //
 ?>
